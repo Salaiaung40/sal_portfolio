@@ -319,7 +319,7 @@ export default {
 <style scoped>
 #contact {
   width: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   /* background: blue; */
   /* background: #efefef; */
   /* font-size: 62.5%; */
@@ -328,7 +328,7 @@ export default {
   /* margin-bottom: 40px; */
   font-size: 2em;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   font-weight: 100;
   padding: 30px 0 0 0;
   color: #fff;
@@ -422,7 +422,7 @@ button {
   background: blue;
   background: #efefef;
   font-size: 62.5%;
-  font-family: "Lato", sans-serif;
+  font-family:  sans-serif;
   font-weight: 300;
   color: #b6b6b6;
 } */
@@ -441,7 +441,7 @@ body section h1 {
   margin-bottom: 40px;
   font-size: 4em;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   font-weight: 100;
 }
 
@@ -467,10 +467,10 @@ form .field label {
   border-radius: 1em;
   font-size: 1.45em;
   letter-spacing: 0.075em;
-  -webkit-transition: all 333ms ease-in-out;
+  /* -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
   -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out; */
   transition: all 333ms ease-in-out;
 }
 /* Check Mark */
@@ -485,10 +485,10 @@ form .field label + span {
   font-size: 2.5em;
   /* text-shadow: 1px 2px 0 lightblue; */
   text-shadow: 1px 2px 0 #cd6302;
-  -webkit-transition: all 333ms ease-in-out;
+  /* -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
   -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out; */
   transition: all 333ms ease-in-out;
 }
 form .field input[type="text"],
@@ -550,7 +550,8 @@ form .field:hover label {
   color: white;
 }
 form input[type="submit"] {
-  background: #fd9638;
+  background: rgb(21, 164, 212);
+  /* background: #fd9638; */
   color: white;
   -webkit-appearance: none;
   border: none;
@@ -561,7 +562,7 @@ form input[type="submit"] {
   padding: 17px 50px 10px 50px;
   font-size: 1.4em;
   letter-spacing: 0.1em;
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   /* -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
@@ -570,8 +571,10 @@ form input[type="submit"] {
   transition: all 333ms ease-in-out;
 }
 form input[type="submit"]:hover {
-  background: #313a3d;
-  color: #fd9638;
+  background: blue;
+  /* background: #313a3d; */
+  color: lightblue;
+  /* color: #fd9638; */
 }
 form input[type="submit"]:focus {
   outline: none;

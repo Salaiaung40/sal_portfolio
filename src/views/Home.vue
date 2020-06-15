@@ -1,7 +1,6 @@
 <template>
   <div id="home">
-    
-    <img class="banner" src="@/assets/Imag/banner12.png" alt="banner" />
+    <img class="banner" src="@/assets/Imag/banner14.png" alt="banner" />
     <!-- <img class="banner" src="@/assets/banner2.jpg" alt="banner" /> -->
 
     <!-- <s> <h1>download link color chage to blue</h1> </s>
@@ -20,7 +19,6 @@
     <h1>create Nav bar</h1>
     <h1>links onepage highlight</h1>
     <h1>fix the slide cover effet after type at Contact Me</h1> -->
-    
 
     <Aboutme />
     <Projects />

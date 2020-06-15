@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="top">
-    <Navbar/>
+      <Navbar />
 
-    <!-- <div class="box2">
+      <!-- <div class="box2">
       <div class="namecontainer">
         <h1>Salai Tun Lin Aung</h1>
         <h5>Web Developer</h5>
@@ -12,11 +12,11 @@
       <img class="banner" src="@/assets/banner2.jpg" alt="banner" />
     </div> -->
 
-    <router-view />
+      <router-view />
 
-    <div id="footer">
-      <h5>salai © 2020 v1.0</h5>
-    </div>
+      <div id="footer">
+        <h5>salai © 2020 v1.0</h5>
+      </div>
     </div>
   </div>
 </template>
@@ -30,9 +30,8 @@ export default {
   name: "Home",
   components: {
     Navbar,
-  }
-}
-
+  },
+};
 </script>
 
 <style>
@@ -54,11 +53,10 @@ export default {
   background-image: linear-gradient(
     to right,
     rgb(34, 31, 31),
-    rgba(255, 0, 0, 0)
+    rgba(80, 76, 76, 0.356) /* rgba(255, 0, 0, 0) */
   ); /* Standard syntax (must be last) */
   z-index: -5;
 }
-
 
 #footer {
   padding: 30px;
@@ -98,12 +96,11 @@ export default {
 
   font-size: 1.5em;
   font-weight: bold;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   word-spacing: 5px;
 }
 #footer {
   font-weight: bold;
   color: #d5dce4;
 }
-
 </style>

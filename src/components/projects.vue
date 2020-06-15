@@ -72,8 +72,8 @@ import card from "@/components/cards/project-card.vue";
   padding-top: 1em;
   font-size: 4em;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  text-shadow: 3px 4px 2px #010203;
+  font-family:  sans-serif;
+  /* text-shadow: 3px 4px 2px #010203; */
   font-weight: 100;
   color: #fff;
   text-align: center;

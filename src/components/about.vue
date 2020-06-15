@@ -1,10 +1,16 @@
 <template>
   <div id="about">
     <h1>About Me</h1>
+    <div class="butgroup">
+      <p class="middle">Click here to Download My CV</p>
 
-    <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
-      <button>Click here to Download My CV</button>
-    </a>
+      <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
+        <button>English</button>
+      </a>
+      <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
+        <button>Dutch</button>
+      </a>
+    </div>
 
     <div class="container1">
       <div class="aboutme">
@@ -88,7 +94,7 @@ export default {
   width: 100%;
   /* background: navy; */
   /* font-size: 62.5%;
-  font-family: "Lato", sans-serif;
+  font-family:  sans-serif;
   font-weight: 300;
   color: #b6b6b6; */
 }
@@ -97,20 +103,40 @@ h1 {
   font-size: 4em;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   font-weight: 100;
-  text-shadow: 3px 4px 2px #010203;
+  /* text-shadow: 3px 4px 2px #010203; */
 }
 h2 {
   color: white;
   text-align: left;
   padding-left: 1em;
 }
-button {
-  width: 300px;
+.butgroup {
+  width: 100vw;
+  /* width: 350px; */
+  /* width: 22%; */
+  /* height: 50px; */
+  color: #010203;
+  /* background: white; */
+  position: relative;
+  /* margin: 0 0 0.5% 39%; */
+  text-align: center;
+
+  border-radius: 1em;
+  color: blue;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
+  font-weight: bold;
+  /* background: red; */
+}
+.butgroup button {
+  width: 100px;
   height: 50px;
   border-radius: 1em;
   font-weight: bold;
+  margin: 0 1em;
   /* color: rgb(255, 0, 100); */
   color: blue;
   background-color: #fff;
