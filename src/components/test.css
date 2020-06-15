@@ -1,0 +1,40 @@
+/* main hadding h1 */
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  padding: 30px 0 0 0;
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 3px 4px 2px #010203;
+  text-transform: uppercase;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  font-family: arial, sans-serif;
+
+}
+
+/* div hadding h1 */
+div h1 {
+  font-family: arial, sans-serif;
+  color: white;
+  text-shadow: 2px 3px 2px #010203;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  letter-spacing: 0.1em;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    /* color: #010203;       */
+    text-shadow: 4px 5px 1px #010203;
+
+  }
+}
