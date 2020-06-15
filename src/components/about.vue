@@ -1,66 +1,78 @@
 <template>
   <div id="about">
     <h1>About Me</h1>
-    <div class="butgroup">
-      <p class="middle">Click here to Download My CV</p>
+        <div class="butgroup">
+          <p class="middle">Click here to Download My CV</p>
 
-      <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
-        <button>English</button>
-      </a>
-      <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
-        <button>Dutch</button>
-      </a>
-    </div>
+          <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
+            <button>English</button>
+          </a>
+          <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
+            <button>Dutch</button>
+          </a>
+        </div>
 
     <div class="container1">
-      <div class="aboutme">
-        <h2>Why I am a webdeveloper</h2>
+          <div class="aboutme">
+            <h2>Why I am a webdeveloper</h2>
 
-        <p>
-          I always passionate and wanted to work at IT sector. Thus, I did
-          self-taught some multimedia programs in the past. As a result, not
-          only improve my knowledge but also later I was able to teach to youth
-          from community. Now opportunity has given by INTEC to pursuit my
-          passionate career in front-end development sector. Ways to improvement
-          are continues learning and take new challenges constantly.
-        </p>
-      </div>
-      <!--end of aboutme -->
+            <p>
+              I always passionate and wanted to work at IT sector. Thus, I did
+              self-taught some multimedia programs in the past. As a result, not
+              only improve my knowledge but also later I was able to teach to youth
+              from community. Now opportunity has given by INTEC to pursuit my
+              passionate career in front-end development sector. Ways to improvement
+              are continues learning and take new challenges constantly.
+            </p>
+          </div>
+          <!--end of aboutme -->
 
       <div class="contact">
-        <ul>
-          <li>
-            <div class="icons"><i class="fa fa-map-marker"></i></div>
-            <div class="contact-name"><p>Location</p></div>
-            <div class="contact-info"><p>Brussels</p></div>
-          </li>
+          <ul>
+              <li>
+                <div class="icons"><i class="fa fa-map-marker"></i></div>
+                <div class="contact-name"><p>Location</p></div>
+                <div class="contact-info"><p>Brussels</p></div>
+                <div class="contact-medias">
+                    <a href="https://github.com/Salaiaung40" target="_">
+                      <i class="fa fa-github"></i>
+                    </a>
+                </div>
+              </li>
 
-          <li>
-            <div class="icons"><i class="fa fa-at"></i></div>
-            <div class="contact-name"><p>E-mail</p></div>
-            <div class="contact-info">
-              <p>
-                <a href="mailto:salaihtunlin@gmail.com">
-                  salaihtunlin@gmail.com</a
-                >
-              </p>
-            </div>
-          </li>
+              <li>
+                <div class="icons"><i class="fa fa-at"></i></div>
+                <div class="contact-name"><p>E-mail</p></div>
+                <div class="contact-info">
+                  <p>
+                    <a href="mailto:salaihtunlin@gmail.com">
+                      salaihtunlin@gmail.com</a>
+                  </p>
+                </div>
+                <div class="contact-medias">
+                    <a href="https://linkedin.com/in/salai-tun-lin-aung-74a74910a" target="_">
+                      <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </div>
+              </li>
 
-          <li>
-            <div class="icons"><i class="fa fa-mobile-phone"></i></div>
-            <div class="contact-name"><p>GSM</p></div>
-            <div class="contact-info"><p>+32 465 483 454</p></div>
-          </li>
-        </ul>
+              <li>
+                <div class="icons"><i class="fa fa-mobile-phone"></i></div>
+                <div class="contact-name"><p>GSM</p></div>
+                <div class="contact-info"><p>+32 465 483 454</p></div>
+                <div class="contact-medias">
+                    <a href="https://www.facebook.com/tun.linaung.566" target="_">
+                      <i class="fa fa-facebook-square" ></i>
+                    </a>
+                </div>
+              </li>
+          </ul>
 
         <div class="map">
           <!-- <h4>My First Google Map</h4> -->
-
-          <!-- <div id="googleMap" style="width:100%;height:400px;"> -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781.4250032914917!2d4.404253839309177!3d50.843843475852175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4aafba87e21%3A0xbf6618b60ececf66!2sGeorges%20Henri!5e0!3m2!1sen!2sbe!4v1591777264649!5m2!1sen!2sbe"
-            width="100%"
+            width="90%"
             height="100%"
             frameborder="0"
             style="border:0;"
@@ -89,14 +101,13 @@ export default {
 
 <style scoped>
 #about {
-  /* margin-top: 2em; */
   font-family: Arial, sans-serif;
   width: 100%;
   /* background: navy; */
-  /* font-size: 62.5%;
-  font-family:  sans-serif;
-  font-weight: 300;
-  color: #b6b6b6; */
+  /* background: rgba(170, 170, 170, 0.027); */
+  
+  
+ 
 }
 h1 {
   padding: 30px 0 0 0;
@@ -114,16 +125,8 @@ h2 {
 }
 .butgroup {
   width: 100vw;
-  /* width: 350px; */
-  /* width: 22%; */
-  /* height: 50px; */
   color: #010203;
   /* background: white; */
-  position: relative;
-  /* margin: 0 0 0.5% 39%; */
-  text-align: center;
-
-  border-radius: 1em;
   color: blue;
   font-family: sans-serif;
   font-weight: 100;
@@ -137,13 +140,11 @@ h2 {
   border-radius: 1em;
   font-weight: bold;
   margin: 0 1em;
-  /* color: rgb(255, 0, 100); */
   color: blue;
   background-color: #fff;
   box-shadow: rgb(253, 253, 253) 0 10px 50px 0, inset #333 0 0 0 0px,
     inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
-  /* font-style: bold; */
-  /* font-size: 1.5em; */
+ 
 }
 
 .container1 {
@@ -175,6 +176,7 @@ h2 {
 }
 ul {
   padding: 2.5em 0 0 0;
+  /* background: green; */
 }
 
 li {
@@ -185,30 +187,40 @@ li {
 }
 .icons {
   width: 4%;
-  color: blue;
-  font-size: 18px;
-  border-right: 1em;
+  color: yellow;
+ font-size: 18px;
+  border-right: 1.2em;
 }
 .contact-name {
   color: #010203;
-  width: 20%;
-  /* font-size: 1.1em; */
+  width: 22%;
   text-transform: uppercase;
   /* background-color: yellow; */
 }
 
 .contact-info {
   color: #010203;
-  width: 52%;
-  /* padding: 0.5em; */
+  width: 50%;
   /* background-color: white; */
 }
 
+.contact-medias {
+  width: 15%;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+    /* background: lightblue; */
+ 
+}
+.contact-medias a{
+ color:blue;
+}
 iframe {
   border-radius: 1em;
   margin-top: 1em;
+  
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
   .container1 {
     display: block;
   }

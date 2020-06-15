@@ -18,29 +18,23 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 
 #nav {
-  padding: 30px;
+ 
+  padding: 1vw;
   /* background-color: #141414 !important; */
   background-color: #343a40 !important;
   box-shadow: -3px 3px 10px rgb(3, 0, 0);
   right: 0;
   left: 0;
-  padding: 0.5em 1em;
+  padding: 1em 1em;
   position: fixed;
   top: 0;
   z-index: 1030;
   text-align: center;
-  
-  /*
-  -ms-flex-pack: justify;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; */
-}
+  }
 
 #nav a {
   font-weight: bold;
@@ -57,14 +51,16 @@ export default {
   color: #5183e0;
 } */
 
-@media screen and (max-width: 900px) {
+
+/* @media screen and (max-width: 900px) {
 
 #nav {
   padding: 1em 1em 0em 1em;
   
+  
 
 }
 
-}
+} */
 
 </style>

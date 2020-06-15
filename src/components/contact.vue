@@ -223,97 +223,6 @@ export default {
     },
   },
 };
-/*
-var goMail = function(message) {
-  //transporter is a way to send your emails
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: gmailEmail,
-      pass: gmailPassword,
-    },
-  });
-  const mailOptions = {
-    from: gmailEmail, // sender address
-    to: "salesdepartment@youcompany.com", // list of receivers
-    subject: "Portfolio contact ", // Subject line
-    text: "!" + message, // plain text body
-    html: "!" + message, // html body
-  };
-
-  //this is callback function to return status to firebase console
-  const getDeliveryStatus = function(error, info) {
-    if (error) {
-      return console.log(error);
-    }
-    console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-  };
-
-  //call of this function send an email, and return status
-  transporter.sendMail(mailOptions, getDeliveryStatus);
-};
-
-//.onDataAdded is watches for changes in database
-exports.onDataAdded = functions.database
-  .ref("/emails/{sessionId}")
-  .onCreate(function(snap, context) {
-    //here we catch a new data, added to firebase database, it stored in a snap variable
-    const createdData = snap.val();
-    var text = createdData.mail;
-
-    //here we send new data using function for sending emails
-    goMail(text);
-  }); */
-/*
-export default {
-  name: "Contact",
-  props: {
-  },
-  // Input Lock
-  methods:{
-
- function ( blur) {
-  $("#hire textarea").each(function () {
-    this = (this);
-    if (this.value != "") {
-      $this.addClass("focused");
-      $("textarea + label + span").css({ opacity: 1 });
-    } else {
-      $this.removeClass("focused");
-      $("textarea + label + span").css({ opacity: 0 });
-    }
-  });
-},
-
- function () {
-  $("#hire .field:first-child input").each(function () {
-    $this = $(this);
-    if (this.value != "") {
-      $this.addClass("focused");
-      $(".field:first-child input + label + span").css({ opacity: 1 });
-    } else {
-      $this.removeClass("focused");
-      $(".field:first-child input + label + span").css({ opacity: 0 });
-    }
-  });
-},
-
- function ()  {
-  $("#hire .field:nth-child(2) input").each(function () {
-    $this = $(this);
-    if (this.value != "") {
-      $this.addClass("focused");
-      $(".field:nth-child(2) input + label + span").css({ opacity: 1 });
-    } else {
-      $this.removeClass("focused");
-      $(".field:nth-child(2) input + label + span").css({ opacity: 0 });
-    }
-  });
-}
-
-},
-}*/
 </script>
 
 <style scoped>
@@ -347,7 +256,6 @@ export default {
 }
 .pic {
   width: 20%;
-  /* display: inline-block; */
   /* background:lightblue; */
   margin: 0 0 0 20%;
 }
@@ -355,44 +263,30 @@ export default {
   width: 3em;
   height: 3em;
   top: 1em;
-  /* padding: 1em 1em 1em 1em; */
   position: relative;
-  /* text-align: center; */
   font-size: 1.8em;
   background: rgb (0, 0, 0);
   border-radius: 50%;
-  /* margin-left: 30%; */
-  /* background-color: red; */
-  /* border: 0.35em solid white; */
 }
 button {
   width: 13em;
   height: 3.5em;
-  /* width: 18vw;
-  height: 5vw; */
   border-radius: 1em;
   font-weight: bold;
   margin: 3em auto;
-  /* display: inline-block; */
-  /* color: rgb(255, 0, 100); */
   color: blue;
   background-color: #fff;
   box-shadow: rgb(253, 253, 253) 0 10px 50px 0, inset #333 0 0 0 0px,
     inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
-  /* font-style: bold; */
-  /* font-size: 0%; */
 }
 
 .reference ul {
   width: 40%;
   margin: 2em 1em 0 0;
-  /* display: inline-block; */
 }
 
 .reference li {
   display: flex;
-  /* width: 75%; */
-  /* text-align: center; */
   text-align: left;
   font-weight: bold;
   padding: 1em 0 0.5em 2em;
@@ -418,14 +312,7 @@ button {
   /* padding: 0.5em; */
   /* background-color: white; */
 }
-/* body {
-  background: blue;
-  background: #efefef;
-  font-size: 62.5%;
-  font-family:  sans-serif;
-  font-weight: 300;
-  color: #b6b6b6;
-} */
+
 body section {
   background: white;
   margin: 60px auto 120px;
@@ -445,6 +332,7 @@ body section h1 {
   font-weight: 100;
 }
 
+/* form section*/
 form {
   width: 58.3333333333%;
   margin: 0 auto;
@@ -454,7 +342,8 @@ form .field {
   position: relative;
   margin-bottom: 35px;
 }
-/* label */
+
+/* label section*/
 form .field label {
   text-transform: uppercase;
   position: absolute;
@@ -467,13 +356,10 @@ form .field label {
   border-radius: 1em;
   font-size: 1.45em;
   letter-spacing: 0.075em;
-  /* -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out; */
   transition: all 333ms ease-in-out;
 }
-/* Check Mark */
+
+/* Check Mark section*/
 form .field label + span {
   font-family: "SSStandard";
   opacity: 0;
@@ -485,12 +371,10 @@ form .field label + span {
   font-size: 2.5em;
   /* text-shadow: 1px 2px 0 lightblue; */
   text-shadow: 1px 2px 0 #cd6302;
-  /* -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out; */
   transition: all 333ms ease-in-out;
 }
+
+/* fields section*/
 form .field input[type="text"],
 form .field input[type="email"],
 form .field textarea {
@@ -516,6 +400,8 @@ form .field textarea#msg {
   -ms-transition: all 333ms ease-in-out; */
   transition: all 333ms ease-in-out;
 }
+
+/* focus & JS toggle class section */
 form .field input[type="text"]:focus,
 form .field input[type="text"].focused,
 form .field textarea:focus,
@@ -534,21 +420,26 @@ form .field input[type="email"]:focus + label,
 form .field input[type="email"].focused + label,
 form .field textarea:focus + label,
 form .field textarea.focused + label {
-  width: 18%;
+  width: 20%;
   background: lightblue;
   /* background: #fd9638; */
   color: #313a3d;
 }
 
+/* js toggle class section*/
 form .field input[type="text"].focused + label,
 form .field textarea.focused + label {
   color: #fd9638;
 }
+
+/* fiel hover section */
 form .field:hover label {
-  width: 18%;
+  width: 20%;
   background: #313a3d;
   color: white;
 }
+
+/* submt button section*/
 form input[type="submit"] {
   background: rgb(21, 164, 212);
   /* background: #fd9638; */
@@ -564,10 +455,6 @@ form input[type="submit"] {
   letter-spacing: 0.1em;
   font-family: sans-serif;
   font-weight: 300;
-  /* -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out; */
   transition: all 333ms ease-in-out;
 }
 form input[type="submit"]:hover {
@@ -582,6 +469,7 @@ form input[type="submit"]:focus {
   /* background: #cd6302; */
 }
 
+/* responsive section */
 @media screen and (max-width: 900px) {
   /* .reference{
 display: block;
