@@ -8,7 +8,7 @@
     
 
       <appcard>
-        <img slot="cover" src="@/assets/salaibcard.png" alt="business card">     
+        <img slot="cover" src="@/assets/Imag/sabcard6.png" alt="business card">     
         <h1 slot="header">Business Card</h1>
         <p slot="content">HTML 5, CSS 3</p>
         <!--
@@ -17,21 +17,25 @@
       </appcard>
 
       <appcard > 
-        <img slot="cover" src="@/assets/mp3player.png">
+        <img slot="cover" src="@/assets/Imag/mp3player.png">
         <h1 slot="header">MP3 musice player</h1>
-        <p slot="content">Framework (Vue CLI) </p>
+        <p slot="content">Framework (Vue CLI) <br> <a href="https://github.com/Salaiaung40/mediaplayer" target="_"> <i class="fa fa-github"></i> </a>
+        </p>
+
       </appcard>
 
       <appcard > 
-        <img slot="cover" src="@/assets/salaishop.png" alt="Shop">
+        <img slot="cover" src="@/assets/Imag/shop6.png" alt="Shop">
         <h1 slot="header">Salai Online Shop</h1>
-        <p slot="content">Framework (Vue CLI)</p>
+        <p slot="content">Framework (Vue CLI) <br> <a href="https://github.com/Salaiaung40/slai-shop" target="_"> <i class="fa fa-github"></i> </a>
+        </p>
       </appcard>
   
       <appcard  >
-        <img slot="cover" src="@/assets/logo.png" alt="profile"> 
+        <img slot="cover" src="@/assets/Imag/portfolio1.png" alt="profile"> 
         <h1 slot="header">My Portfolio</h1>
-        <p slot="content">Framework (Vue CLI)</p>
+        <p slot="content">Framework (Vue CLI) <br> <a href="https://github.com/Salaiaung40/sal_portfolio" target="_"> <i class="fa fa-github"></i> </a>
+        </p>
       </appcard>
 
     </div> <!--end of container-->
@@ -96,10 +100,6 @@ h1+p, p+p {
   /* background-color: white; */
 }
 
-
-  
-
-
 img {
   position: relative;
   flex: 0 0 240px;
@@ -113,84 +113,15 @@ img {
   /* background-color: yellow; */
 }
 
- /* .appcard {
-  opacity: 1;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 80%;
-  height: 90%;
-  padding: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
-    opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  pointer-events: none;
-} */
-/*
-#card-wrap {
-  margin: 20px;
-  transform: perspective(800px);
-  transform-style: preserve-3d;
-  cursor: pointer;
-  
-}
-.card-bg {
-  opacity: 0.5;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  pointer-events: none;
+i{
+    width: 15%;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: none;
+   color:blue;
+    /* background: lightblue; */
+ 
 }
 
-.card-info {
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  color: #fff;
-  transform: translateY(40%);
-  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-  .card-info.p {
-   opacity: 0;
-  text-shadow: black 0 2px 3px;
-  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  
- .card-info * {
-  position: relative;
-  z-index: 1;
- }
-  
-  .card-info:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-  background-blend-mode: overlay;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
 
-.card-info h1 {
-  font-family: "Playfair Display";
-  font-size: 36px;
-  font-weight: 700;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
-}
-*/
 </style> 

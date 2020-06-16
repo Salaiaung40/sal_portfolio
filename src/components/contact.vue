@@ -56,23 +56,22 @@
         </li>
       </ul>
     </div>
+
     <section id="hire">
       <h1>Contact Me</h1>
 
       <form id="form" class="contact-form" @submit.prevent="sendEmail">
-        <div class="field name-box">
-          <input
-            type="text"
-            id="name"
-            name="user_name"
-            v-model="user_name"
-            @change="inputCheck"
-            placeholder="Who Are You?"
-            required
-          />
-          <label for="name">Name</label>
-          <span class="ss-icon" v-if="inputCheck">check</span>
-        </div>
+
+          <div class="field name-box">
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Who Are You?"
+              required/>
+            <label for="name" >Name</label>
+            
+          </div>
 
         <div class="field email-box">
           <input
@@ -83,7 +82,7 @@
             required
           />
           <label for="email">Email</label>
-          <span class="ss-icon">check</span>
+         
         </div>
 
         <div class="field company-box">
@@ -93,8 +92,8 @@
             name="user_company"
             placeholder="Company / Organization"
           />
-          <label for="name">Company</label>
-          <span class="ss-icon">check</span>
+          <label for="company">Company</label>
+       
         </div>
 
         <div class="field msg-box">
@@ -106,7 +105,7 @@
             required
           ></textarea>
           <label for="msg">Msg</label>
-          <span class="ss-icon">check</span>
+       
         </div>
 
         <input class="button" type="submit" value="Send" />
@@ -120,73 +119,9 @@ import emailjs from "emailjs-com";
 // import Check from "@/components/check.js";
 export default {
   name: "Contact",
-  data: () => ({
-    user_name: "",
-  }),
-
+ 
   methods: {
-    // Check,
-    inputCheck: () => {
-      var fieldName = document.forms["form"]["user_name"].value;
-      // var fieldMail = document.forms["form"]["user_email"].value;
-      // var fieldCompany = document.forms["form"]["user_company"].value;
-      // var fieldMessage = document.forms["form"]["user_message"].value;
-
-      if (fieldName != "") {
-        // this.addClass('focused');
-        "textarea + label + span".css({ opacity: 1 });
-      } else {
-        // this.removeClass('focused');
-        "textarea + label + span".css({ opacity: 0 });
-      }
-    },
-
-    //  inputLock() {
-    //         blur(function () {
-    //             ('#hire textarea').each(function () {
-    //                 // this = textarea = this;
-    //                 if ( this.value != '' ) {
-    //                   this.addClass('focused');
-    //                   ('textarea + label + span').css({'opacity': 1});
-    //                 }
-    //                 else {
-    //                   this.removeClass('focused');
-    //                   ('textarea + label + span').css({'opacity': 0});
-    //                 }
-    //             });
-    //         }),
-
-    //         // #hire.field:first-child
-    //         blur(function () {
-    //             ('#hire .field:first-child input').each(function () {
-    //                 // $this = $(this);
-    //                 if ( this.value != '' ) {
-    //                   this.addClass('focused');
-    //                   ('.field:first-child input + label + span').css({'opacity': 1});
-    //                 }
-    //                 else {
-    //                   this.removeClass('focused');
-    //                   ('.field:first-child input + label + span').css({'opacity': 0});
-    //                 }
-    //             });
-    //         }),
-
-    //         // #hire.field:
-    //         blur(function () {
-    //             ('#hire .field:nth-child(2) input').each(function () {
-    //                 // $this = $(this);
-    //                 if ( this.value != '' ) {
-    //                   this.addClass('focused');
-    //                   ('.field:nth-child(2) input + label + span').css({'opacity': 1});
-    //                 }
-    //                 else {
-    //                   this.removeClass('focused');
-    //                   ('.field:nth-child(2) input + label + span').css({'opacity': 0});
-    //                 }
-    //             });
-    //         })
-    //       },
-
+    
     sendEmail: (e) => {
       var fieldName = document.forms["form"]["user_name"].value;
       var fieldMail = document.forms["form"]["user_email"].value;
@@ -324,6 +259,7 @@ body section {
   border-radius: 1em;
   /* background-color: green; */
 }
+
 body section h1 {
   margin-bottom: 40px;
   font-size: 4em;
@@ -332,18 +268,22 @@ body section h1 {
   font-weight: 100;
 }
 
-/* form section*/
+*:focus {
+  outline: 0;
+}
+/* form section   */
 form {
-  width: 58.3333333333%;
+  width: 70%;
   margin: 0 auto;
 }
+
 form .field {
   width: 100%;
   position: relative;
   margin-bottom: 35px;
 }
 
-/* label section*/
+/* label section */
 form .field label {
   text-transform: uppercase;
   position: absolute;
@@ -359,28 +299,14 @@ form .field label {
   transition: all 333ms ease-in-out;
 }
 
-/* Check Mark section*/
-form .field label + span {
-  font-family: "SSStandard";
-  opacity: 0;
-  color: white; /*here to test */
-  display: block;
-  position: absolute;
-  top: 12px;
-  left: 7%;
-  font-size: 2.5em;
-  /* text-shadow: 1px 2px 0 lightblue; */
-  text-shadow: 1px 2px 0 #cd6302;
-  transition: all 333ms ease-in-out;
-}
 
-/* fields section*/
+/* fields section */
 form .field input[type="text"],
 form .field input[type="email"],
 form .field textarea {
   border: none;
   background: #e8e9ea;
-  width: 80.5%;
+  width: 80%;
   margin: 0;
   padding: 18px 0;
   padding-left: 19.5%;
@@ -390,56 +316,40 @@ form .field textarea {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
+
 form .field input[type="text"]#msg,
 form .field textarea#msg {
-  height: 18px;
+  height: 60px;
   resize: none;
-  /* -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out; */
+ 
   transition: all 333ms ease-in-out;
 }
-
-/* focus & JS toggle class section */
-form .field input[type="text"]:focus,
-form .field input[type="text"].focused,
-form .field textarea:focus,
-form .field textarea.focused {
-  outline: none;
-}
-form .field input[type="text"]:focus#msg,
-form .field input[type="text"].focused#msg,
-form .field textarea:focus#msg,
-form .field textarea.focused#msg {
-  padding-bottom: 150px;
+ /* from new */
+form textarea:focus#msg,
+form textarea:not(:placeholder-shown)#msg {
+  height: 166px;
 }
 form .field input[type="text"]:focus + label,
-form .field input[type="text"].focused + label,
 form .field input[type="email"]:focus + label,
-form .field input[type="email"].focused + label,
+form .field input[type="text"]:not(:placeholder-shown) + label,
+form .field input[type="email"]:not(:placeholder-shown) + label,
 form .field textarea:focus + label,
-form .field textarea.focused + label {
-  width: 20%;
-  background: lightblue;
-  /* background: #fd9638; */
-  color: #313a3d;
-}
-
-/* js toggle class section*/
-form .field input[type="text"].focused + label,
-form .field textarea.focused + label {
-  color: #fd9638;
+form .field textarea:not(:placeholder-shown) + label,
+form .field:hover label {
+  width: 25%;
+  background: rgb(21, 164, 212);
+  color: #010203;
 }
 
 /* fiel hover section */
 form .field:hover label {
-  width: 20%;
+  width: 25%;
   background: #313a3d;
   color: white;
 }
 
-/* submt button section*/
+/* submt button section */
 form input[type="submit"] {
   background: rgb(21, 164, 212);
   /* background: #fd9638; */
@@ -457,6 +367,7 @@ form input[type="submit"] {
   font-weight: 300;
   transition: all 333ms ease-in-out;
 }
+
 form input[type="submit"]:hover {
   background: blue;
   /* background: #313a3d; */
@@ -471,19 +382,22 @@ form input[type="submit"]:focus {
 
 /* responsive section */
 @media screen and (max-width: 900px) {
-  /* .reference{
-display: block;
-} */
+
+body section {
+  width:90%
+}
+form{
+  width: 90%;
+}
   .pic {
     width: 30%;
-    /* display: inline-block; */
-    /* margin: 0  0  0 35%; */
+       
     margin: 0 0 0 10%;
   }
   .reference ul {
     width: 50%;
-    /* margin: 0 0 0 25%; */
-    /* background: yellowgreen; */
+      /* background: yellowgreen; */
   }
 }
+
 </style>

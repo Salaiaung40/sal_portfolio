@@ -1,32 +1,132 @@
 <template>
-  <form class="contact-form" @submit.prevent="sendEmail">
-    <label>Name</label>
-    <input type="text" name="user_name">
-    <label>Email</label>
-    <input type="email" name="user_email">
-    <label>Message</label>
-    <textarea name="message"></textarea>
-    <input type="submit" value="Send">
+  <div class="wrapper">
+  <form action="#" method="post">
+
+      <div class="field">
+        <input type="text" id="name" name="name" placeholder="Who are you?" autofocus/>
+        <label for="name">Name</label>
+      </div>
+
+      <div class="field">
+        <input type="text" id="email" name="email" placeholder="name@domain.tld" />
+        <label for="email">E-Mail</label>
+      </div>
+
+      <div class="field">
+        <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+        <label for="msg">Nachricht</label>
+      </div>
+
+    <input class="button" type="submit" value="Send" />
   </form>
+
+</div>
 </template>
 
-<script >
-import emailjs from 'emailjs-com';
+<script>
 export default {
-  methods: {
-    sendEmail: (e) => {
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-        .then((result) => {
-            console.log('SUCCESS!', result.status, result.text);
-        }, (error) => {
-            console.log('FAILED...', error);
-        });
-    }
-  }
+
 }
 </script>
 
-<style>
+<style scoped>
+/* * {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+} */
 
+/* html,
+body {
+  background: #0e101f;
+  margin: 0;
+  padding: 0;
+} */
+
+*:focus {
+  outline: 0;
+}
+
+/* .wrapper {
+  margin: 100px auto 0;
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+} */
+
+/* form {
+  width: 100%;
+  margin: 0;
+} */
+
+/* form * {
+  font-size: 20px;
+  letter-spacing: 0.075em;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+} */
+
+/* form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+} */
+
+/* form .field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #b13e8b, #372056);
+  width: 100%;
+  height: 64px;
+  transition: width 333ms ease-in-out;
+  text-align: center;
+  padding: 18px 0;
+} */
+
+/* form .field input[type="text"],
+form .field textarea {
+  border: none;
+  width: 100%;
+  height: 64px;
+  margin: 0;
+  padding-left: 19.5%;
+  color: #313a3d;
+} */
+
+/* form #msg {
+  height: 64px;
+  resize: none;
+  transition: all 333ms ease-in-out;
+  padding-top: 18px;
+} */
+/* form textarea:focus#msg,
+form textarea:not(:placeholder-shown)#msg {
+  height: 166px;
+}
+form input[type="text"]:focus + label,
+form input[type="text"]:not(:placeholder-shown) + label,
+form textarea:focus + label,
+form textarea:not(:placeholder-shown) + label,
+form .field:hover label {
+  width: 18%;
+} */
+/* form input[type="submit"] {
+  background: linear-gradient(90deg, #b13e8b, #812d65);
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  padding: 13px 50px;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+  background: #372056;  
+} */
 
 </style>

@@ -13,12 +13,12 @@
     <s> <h1>all font, size, color and effect are same</h1> </s>
     <s><h1>make a logo with banner</h1></s>
     <s><h1>Add picture</h1></s>
-
+    <s><h1>fix the slide cover effet after type at Contact Me</h1></s>
 
     <h1>All color should be consistance</h1>    
     <h1>create Nav bar</h1>
     <h1>links onepage highlight</h1>
-    <h1>fix the slide cover effet after type at Contact Me</h1> -->
+     -->
 
     <Aboutme />
     <Projects />
