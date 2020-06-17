@@ -53,10 +53,21 @@
         </div>
       </div>
 
+      <div class="WordPress">
+        <p class="bar-title">
+          WordPress
+          <span class="percent align-right">70%</span>
+        </p>
+        <div class="bar">
+          <div class="bar-fill bar-fill-WordPress start"></div>
+        </div>
+      </div>
+
+
       <div class="photoshop">
         <p class="bar-title">
           Photoshop
-          <span class="percent align-right">50%</span>
+          <span class="percent align-right">60%</span>
         </p>
         <div class="bar">
         <div class="bar-fill bar-fill-photoshop start"></div>
@@ -80,6 +91,7 @@ export default {
 	font-family: arial, sans-serif;	
 	font-size: 18px;
 	color: #010203;
+  /* background: blueviolet; */
 }
  h1{
   text-transform: uppercase;
@@ -293,9 +305,45 @@ export default {
         width: 90%;
     }
 }
+
+/*Edit here for WordPress*/
+.bar-fill-WordPress{
+	width: 70%;
+  background-color: #21759b;
+  animation: bar-fill-responsive 2s ease-out;
+	-moz-animation: bar-fill-responsive 2s ease-out;
+  -webkit-animation: bar-fill-responsive 2s ease-out;
+}
+@keyframes bar-fill-WordPress {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-WordPress {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-WordPress {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
 /*Edit here for Photoshop*/
 .bar-fill-photoshop{
-	width: 50%;
+	width: 60%;
   background-color: #0a73dc;
   animation: bar-fill-photoshop 2s ease-out;
 	-moz-animation: bar-fill-photoshop 2s ease-out;
@@ -334,6 +382,9 @@ h1 {
   color: white;
   /* text-shadow: none; */
   text-shadow: 3px 4px 2px #010203;
+}
+.container-skills {
+	margin: 0em auto 0 2em;
 }
 .percent {
   color: black;

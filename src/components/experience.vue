@@ -244,6 +244,7 @@ span i{
    }
  
    h1 {
+      font-size: 3em;
       text-shadow: 4px 5px 1px #010203;
    }
 }

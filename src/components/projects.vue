@@ -123,5 +123,12 @@ i{
  
 }
 
+@media screen and (max-width: 768px) {
+.title {
+font-size: 3em;
+}
+
+}
+
 
 </style> 

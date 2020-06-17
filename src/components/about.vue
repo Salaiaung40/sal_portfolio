@@ -4,17 +4,18 @@
         <div class="butgroup">
           <p class="middle">Click here to Download My CV</p>
 
-          <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
+          <a href="https://drive.google.com/file/d/1J3ovGLmHIix3H7WF1k5ZQ-4591CEmfOz/view?usp=sharing" target="_" download>
             <button>English</button>
           </a>
-          <a href="'@/assets/business_card.jpg' 'banner2.png'" download>
+          <a href="https://drive.google.com/file/d/1b2DpLMdZlM-LQcrtNJVvPq8YR0ZxeTrJ/view?usp=sharing"  target="_" download>
             <button>Dutch</button>
           </a>
         </div>
 
     <div class="container1">
           <div class="aboutme">
-            <h2>Why I am a webdeveloper</h2>
+            <h2>Why I am a webdeveloper</h2> <br> <br>
+            <h3>"There is no success in life without challenges."</h3>
 
             <p>
               I always passionate and wanted to work at IT sector. Thus, I did
@@ -72,8 +73,6 @@
           <!-- <h4>My First Google Map</h4> -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781.4250032914917!2d4.404253839309177!3d50.843843475852175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4aafba87e21%3A0xbf6618b60ececf66!2sGeorges%20Henri!5e0!3m2!1sen!2sbe!4v1591777264649!5m2!1sen!2sbe"
-            width="90%"
-            height="100%"
             frameborder="0"
             style="border:0;"
             allowfullscreen=""
@@ -118,9 +117,15 @@ h1 {
   font-weight: 100;
   /* text-shadow: 3px 4px 2px #010203; */
 }
-h2 {
+h2  {
   color: white;
   text-align: left;
+  padding-left: 1em;
+}
+
+h3{
+  color: white;
+  /* text-align: left; */
   padding-left: 1em;
 }
 .butgroup {
@@ -215,12 +220,19 @@ li {
 .contact-medias a{
  color:blue;
 }
+
 iframe {
+  width:85%; 
+  height: 100%;
+  border:0;
   border-radius: 1em;
   margin-top: 1em;
   
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 900px) {
+  h1{
+    font-size: 3em;
+  }
   .container1 {
     display: block;
   }
@@ -236,7 +248,21 @@ iframe {
   }
   .contact {
     width: 80%;
-    margin: 0 20em 0 7em;
+    margin: 0 10%;
+    /* background: yellow; */
   }
+}
+@media screen and (max-width: 500px) {
+  .aboutme {
+    width: 100%;
+    margin: 0;
+    /* background-color: blue;  */
+  }
+ .contact {
+   width: 100%;
+   margin: 0 0 0 2%;
+   font-size: 3.7vw;
+  }
+ 
 }
 </style>

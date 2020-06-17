@@ -256,6 +256,21 @@ color:white
     
 }
 
+@media screen and (max-width: 500px) {
 
+.univ{
+margin: 0;
+/* background: darkorange; */
+
+}
+
+.item .image{
+  padding: 0;
+ /* background: blueviolet; */
+}
+.item .image::before {
+ left: 3.4em;
+}
+}
 
 </style> 

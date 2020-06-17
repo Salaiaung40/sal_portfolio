@@ -61,17 +61,16 @@
       <h1>Contact Me</h1>
 
       <form id="form" class="contact-form" @submit.prevent="sendEmail">
-
-          <div class="field name-box">
-            <input
-              type="text"
-              id="name"
-              name="user_name"
-              placeholder="Who Are You?"
-              required/>
-            <label for="name" >Name</label>
-            
-          </div>
+        <div class="field name-box">
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Who Are You?"
+            required
+          />
+          <label for="name">Name</label>
+        </div>
 
         <div class="field email-box">
           <input
@@ -82,7 +81,6 @@
             required
           />
           <label for="email">Email</label>
-         
         </div>
 
         <div class="field company-box">
@@ -90,10 +88,9 @@
             id="company"
             type="text"
             name="user_company"
-            placeholder="Company / Organization"
+            placeholder="Company"
           />
           <label for="company">Company</label>
-       
         </div>
 
         <div class="field msg-box">
@@ -105,26 +102,28 @@
             required
           ></textarea>
           <label for="msg">Msg</label>
-       
         </div>
 
         <input class="button" type="submit" value="Send" />
-    
       </form>
       <div class="medias">
-          <!-- <p>Thanks you for contact me </p> -->
-          <a href="https://github.com/Salaiaung40" target="_">
-            <i class="fa fa-github"></i> </a>
+        <!-- <p>Thanks you for contact me </p> -->
+        <a href="https://github.com/Salaiaung40" target="_">
+          <i class="fa fa-github"></i>
+        </a>
 
-          <a href="https://linkedin.com/in/salai-tun-lin-aung-74a74910a" target="_">
-            <i class="fa fa-linkedin-square"></i></a>
+        <a
+          href="https://linkedin.com/in/salai-tun-lin-aung-74a74910a"
+          target="_"
+        >
+          <i class="fa fa-linkedin-square"></i
+        ></a>
 
-          <a href="https://www.facebook.com/tun.linaung.566" target="_">
-            <i class="fa fa-facebook-square" ></i></a>
+        <a href="https://www.facebook.com/tun.linaung.566" target="_">
+          <i class="fa fa-facebook-square"></i
+        ></a>
       </div>
     </section>
-    
-  
   </div>
 </template>
 
@@ -133,9 +132,8 @@ import emailjs from "emailjs-com";
 // import Check from "@/components/check.js";
 export default {
   name: "Contact",
- 
+
   methods: {
-    
     sendEmail: (e) => {
       var fieldName = document.forms["form"]["user_name"].value;
       var fieldMail = document.forms["form"]["user_email"].value;
@@ -232,6 +230,7 @@ button {
 .reference ul {
   width: 40%;
   margin: 2em 1em 0 0;
+  /* background: blueviolet; */
 }
 
 .reference li {
@@ -313,7 +312,6 @@ form .field label {
   transition: all 333ms ease-in-out;
 }
 
-
 /* fields section */
 form .field input[type="text"],
 form .field input[type="email"],
@@ -328,18 +326,17 @@ form .field textarea {
   color: #313a3d;
   font-size: 1.4em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
-
 
 form .field input[type="text"]#msg,
 form .field textarea#msg {
   height: 60px;
   resize: none;
- 
+
   transition: all 333ms ease-in-out;
 }
- /* from new */
+/* from new */
 form textarea:focus#msg,
 form textarea:not(:placeholder-shown)#msg {
   height: 166px;
@@ -351,14 +348,15 @@ form .field input[type="email"]:not(:placeholder-shown) + label,
 form .field textarea:focus + label,
 form .field textarea:not(:placeholder-shown) + label,
 form .field:hover label {
-  width: 25%;
+  width: 28%;
   background: rgb(21, 164, 212);
   color: #010203;
+  font-size: 1em;
 }
 
 /* fiel hover section */
 form .field:hover label {
-  width: 25%;
+  width: 28%;
   background: #313a3d;
   color: white;
 }
@@ -393,31 +391,39 @@ form input[type="submit"]:focus {
   background: green;
   /* background: #cd6302; */
 }
-.medias a{
-font-size: 2.5em;
-color: blue;
-padding: 0 0.5em;
-/* background: black; */
+.medias a {
+  font-size: 2.5em;
+  color: blue;
+  padding: 0 0.5em;
+  /* background: black; */
 }
 
 /* responsive section */
 @media screen and (max-width: 900px) {
-
-body section {
-  width:90%
-}
-form{
-  width: 90%;
-}
+  body section {
+    width: 90%;
+  }
+  form {
+    width: 90%;
+  }
+  body section h1 {
+    font-size: 13vw;
+  }
+  .reference {
+    display: inline-block;
+  }
   .pic {
-    width: 30%;
-       
-    margin: 0 0 0 10%;
+    width: 100%;
+    /* background: blue; */
+    margin: 0;
   }
-  .reference ul {
-    width: 50%;
-      /* background: yellowgreen; */
+  .reference ul,
+  .reference li {
+    width: 100%;
+    /* background: yellowgreen; */
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 3.6vw;
   }
 }
-
 </style>
