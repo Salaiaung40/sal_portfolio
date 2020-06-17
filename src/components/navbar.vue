@@ -1,28 +1,24 @@
 <template>
   <div id="nav">
-      <!-- <router-link to="/">Home</router-link> | -->
-      <a href="#home">Home</a> | <a href="#about">About Me</a> |
-      <a href="#work">My Projects</a> | <a href="#experience">Experience</a> |<a
-        href="#edu"
-        >Education and Skills</a
-      >
-      | <a href="#contact">Contact Me</a>
-      > |
-      <!-- <router-link to="/about">About</router-link> -->
-    </div>
+    <!-- <router-link to="/">Home</router-link> | -->
+    <a href="#home" class="scrollactive-item">Home</a> |
+    <a href="#about" class="scrollactive-item">About Me</a> |
+    <a href="#work" class="scrollactive-item">My Projects</a> |
+    <a href="#experience" class="scrollactive-item">Experience</a> |
+    <a href="#edu" class="scrollactive-item">Education and Skills</a>|
+    <a href="#contact" class="scrollactive-item">Contact Me</a> |
+    <!-- <router-link to="/about">About</router-link> -->
+  </div>
 </template>
 
 <script>
 export default {
-
-}
+  components: {},
+};
 </script>
 
 <style scoped>
-
-
 #nav {
- 
   padding: 1vw;
   /* background-color: #141414 !important; */
   background-color: #343a40 !important;
@@ -34,7 +30,7 @@ export default {
   top: 0;
   z-index: 1030;
   text-align: center;
-  }
+}
 
 #nav a {
   font-weight: bold;
@@ -47,10 +43,14 @@ export default {
   padding: 0.5vw 0.5vw;
 }
 
+#nav a:hover {
+  background: #fff;
+  color: #141414;
+}
+
 /* #nav a .router-link-exact-active {
   color: #5183e0;
 } */
-
 
 /* @media screen and (max-width: 900px) {
 
@@ -62,5 +62,4 @@ export default {
 }
 
 } */
-
 </style>

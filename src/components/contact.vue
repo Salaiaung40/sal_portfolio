@@ -109,8 +109,22 @@
         </div>
 
         <input class="button" type="submit" value="Send" />
+    
       </form>
+      <div class="medias">
+          <!-- <p>Thanks you for contact me </p> -->
+          <a href="https://github.com/Salaiaung40" target="_">
+            <i class="fa fa-github"></i> </a>
+
+          <a href="https://linkedin.com/in/salai-tun-lin-aung-74a74910a" target="_">
+            <i class="fa fa-linkedin-square"></i></a>
+
+          <a href="https://www.facebook.com/tun.linaung.566" target="_">
+            <i class="fa fa-facebook-square" ></i></a>
+      </div>
     </section>
+    
+  
   </div>
 </template>
 
@@ -132,7 +146,7 @@ export default {
         alert("Name, e-mail and message must be filled out!");
         return false;
       } else {
-        alert("Thank you for the mail!");
+        alert("Thank you for your Message!");
       }
 
       var template_params = {
@@ -250,10 +264,10 @@ button {
 
 body section {
   background: white;
-  margin: 60px auto 120px;
+  margin: 60px auto 30px;
   /* border-top: 15px solid #313a3d; */
   text-align: center;
-  padding: 50px 0 110px;
+  padding: 50px 0 10px;
   width: 80%;
   max-width: 1100px;
   border-radius: 1em;
@@ -378,6 +392,12 @@ form input[type="submit"]:focus {
   outline: none;
   background: green;
   /* background: #cd6302; */
+}
+.medias a{
+font-size: 2.5em;
+color: blue;
+padding: 0 0.5em;
+/* background: black; */
 }
 
 /* responsive section */
