@@ -106,6 +106,7 @@
 
         <input class="button" type="submit" value="Send" />
       </form>
+
       <div class="medias">
         <!-- <p>Thanks you for contact me </p> -->
         <a href="https://github.com/Salaiaung40" target="_">
@@ -129,7 +130,8 @@
 
 <script>
 import emailjs from "emailjs-com";
-// import Check from "@/components/check.js";
+import Salert from "vue-simple-alert";
+
 export default {
   name: "Contact",
 
@@ -140,11 +142,19 @@ export default {
       // var fieldCompany = document.forms["form"]["user_company"].value;
       var fieldMessage = document.forms["form"]["user_message"].value;
 
-      if (fieldName == "" && fieldMail == "" && fieldMessage == "") {
-        alert("Name, e-mail and message must be filled out!");
+      if (fieldName == "" || fieldMail == "" || fieldMessage == "") {
+        Salert.alert(
+          "Thanks",
+          "Plese fill your Name, e-mail and Messages",
+          "error"
+        );
         return false;
       } else {
-        alert("Thank you for your Message!");
+        Salert.alert(
+          "I will respond to you ASAP.",
+          "Thank you for reaching out!",
+          "success"
+        );
       }
 
       var template_params = {
@@ -167,6 +177,11 @@ export default {
             console.log("FAILED...", error);
           }
         );
+
+      document.forms["form"]["user_name"].value = "";
+      document.forms["form"]["user_email"].value = "";
+      document.forms["form"]["user_company"].value = "";
+      document.forms["form"]["user_message"].value = "";
     },
   },
 };
@@ -193,13 +208,9 @@ export default {
 
 .reference {
   display: flex;
-  /* display: inline-block; */
-  /* width: 80%; */
   /* background-color: pink; */
+  /* width: 100%; */
   text-align: center;
-  /* align-items: center; */
-  /* margin: 0 15em 0 30%; */
-  /* position: center; */
 }
 .pic {
   width: 20%;
@@ -242,7 +253,7 @@ button {
 }
 .icons {
   width: 5%;
-  color: blue;
+  color: yellow;
   font-size: 18px;
   /* border-right: 2em; */
 }
@@ -391,6 +402,7 @@ form input[type="submit"]:focus {
   background: green;
   /* background: #cd6302; */
 }
+
 .medias a {
   font-size: 2.5em;
   color: blue;
@@ -400,6 +412,9 @@ form input[type="submit"]:focus {
 
 /* responsive section */
 @media screen and (max-width: 900px) {
+  .icons {
+    width: 9%;
+  }
   body section {
     width: 90%;
   }
@@ -410,7 +425,10 @@ form input[type="submit"]:focus {
     font-size: 13vw;
   }
   .reference {
+    width: 97%;
     display: inline-block;
+    margin-left: 0.5em;
+    /* background: tomato; */
   }
   .pic {
     width: 100%;
@@ -421,9 +439,15 @@ form input[type="submit"]:focus {
   .reference li {
     width: 100%;
     /* background: yellowgreen; */
+
     margin: 0;
     padding: 0.5em 0;
     font-size: 3.6vw;
+  }
+  .contact-name,
+  .contact-info {
+    /* background: tomato; */
+    color: white;
   }
 }
 </style>

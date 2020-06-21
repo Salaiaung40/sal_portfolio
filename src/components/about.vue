@@ -129,7 +129,7 @@ h3{
   padding-left: 1em;
 }
 .butgroup {
-  width: 100vw;
+  width: 100%;
   color: #010203;
   /* background: white; */
   color: blue;
@@ -144,7 +144,7 @@ h3{
   height: 50px;
   border-radius: 1em;
   font-weight: bold;
-  margin: 0 1em;
+  margin: 0.5em 1em;
   color: blue;
   background-color: #fff;
   box-shadow: rgb(253, 253, 253) 0 10px 50px 0, inset #333 0 0 0 0px,
@@ -178,6 +178,7 @@ h3{
   /* background-color: brown; */
   width: 50%;
   margin: 1em;
+  color: #010203;
 }
 ul {
   padding: 2.5em 0 0 0;
@@ -197,14 +198,14 @@ li {
   border-right: 1.2em;
 }
 .contact-name {
-  color: #010203;
+  /* color: #010203; */
   width: 22%;
   text-transform: uppercase;
   /* background-color: yellow; */
 }
 
 .contact-info {
-  color: #010203;
+  /* color: #010203; */
   width: 50%;
   /* background-color: white; */
 }
@@ -243,7 +244,7 @@ iframe {
   }
   .aboutme p,
   h2 {
-    color: #010203;
+    /* color: #010203; */
     font-weight: bold;
   }
   .contact {
@@ -259,10 +260,14 @@ iframe {
     /* background-color: blue;  */
   }
  .contact {
-   width: 100%;
+   width: 97%;
    margin: 0 0 0 2%;
    font-size: 3.7vw;
+   color: #fff;
   }
- 
+ .icons{
+   width: 8%;
+ }
+
 }
 </style>

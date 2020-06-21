@@ -25,6 +25,7 @@
     <Experience />
     <Education />
     <Contact />
+  
   </div>
 </template>
 
@@ -35,6 +36,7 @@ import Experience from "@/components/experience.vue";
 import Education from "@/components/edu.vue";
 import Contact from "@/components/contact.vue";
 
+
 export default {
   name: "Home",
   components: {
@@ -43,6 +45,7 @@ export default {
     Experience,
     Education,
     Contact,
+
   },
 };
 </script>

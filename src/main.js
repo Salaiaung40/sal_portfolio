@@ -3,17 +3,17 @@ import App from "./App.vue";
 import router from "./router";
 import firebase from "firebase/app";
 import VueNativeSock from "vue-native-websocket";
+
 // import $ from 'jquery'
-// import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 Vue.config.productionTip = false;
-Vue.use(VueNativeSock, "ws://localhost:9090");
-// Vue.use(BootstrapVue);
+Vue.use(VueNativeSock, "ws://localhost:8080");
+import VueSimpleAlert from "vue-simple-alert";
+Vue.use(VueSimpleAlert);
+
 // var $ = require('jquery')
-var Scrollactive = require("vue-scrollactive");
-Vue.use(Scrollactive);
+// var Scrollactive = require("vue-scrollactive");
+// Vue.use(Scrollactive);
 new Vue({
   router,
   render: (h) => h(App),

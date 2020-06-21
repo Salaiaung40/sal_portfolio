@@ -177,7 +177,7 @@ span i{
    border: 2px solid #F5F7FA;
    background: #141414;
    margin-top: 10px;
-   z-index: 9999
+   z-index: 20;
 }
 
 .timeline-content {
