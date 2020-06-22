@@ -19,7 +19,7 @@
       <appcard > 
         <img slot="cover" src="@/assets/Imag/mp3player.png">
         <h1 slot="header">MP3 musice player</h1>
-        <p slot="content">Framework (Vue CLI) <br> <a href="https://github.com/Salaiaung40/mediaplayer" target="_"> <i class="fa fa-github"></i> </a>
+        <p slot="content">Framework (Vue CLI) <br> <a href="https://github.com/Salaiaung40/Media-player" target="_"> <i class="fa fa-github"></i> </a>
         </p>
 
       </appcard>

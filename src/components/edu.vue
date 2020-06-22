@@ -122,8 +122,8 @@ export default {
 }
 .univ h1 {
   text-transform: uppercase;
-  font-family:  sans-serif;
-  text-shadow: 3px 4px 2px #010203;
+  font-family:  arial, sans-serif;
+  /* text-shadow: 3px 4px 2px #010203; */
   font-size: 1.4em;
   letter-spacing: 0.1em;
   font-weight: 600;
@@ -215,7 +215,7 @@ export default {
 
 .skils{
 font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: arial, sans-serif;
   width: 50%;
 }
 

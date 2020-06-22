@@ -1,7 +1,7 @@
 <template>
   <div class="container-skills">
     <h1>Programming Language Skills</h1>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      
       
       <div class="html">
         <p class="bar-title">
@@ -95,7 +95,7 @@ export default {
 }
  h1{
   text-transform: uppercase;
-  font-family:  sans-serif;
+  font-family:  arial, sans-serif;
   /* text-shadow: 3px 4px 2px whitesmoke; */
   font-size: 1.4em;
   letter-spacing: 0.1em;
@@ -381,7 +381,7 @@ export default {
 h1 {
   color: white;
   /* text-shadow: none; */
-  text-shadow: 3px 4px 2px #010203;
+  /* text-shadow: 3px 4px 2px #010203; */
 }
 .container-skills {
 	margin: 0em auto 0 2em;
