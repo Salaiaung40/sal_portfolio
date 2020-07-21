@@ -16,7 +16,7 @@
         <div class="details">
           <div>
             <h2>INTEC Brussels</h2>
-              <p>Full-time intense course of HTML, CSS, Javascript and modern applications for Front-End Developing using also such popular Javascript frameworks as VUE and React. </p>
+              <p>Full-time intense course of HTML, CSS, Javascript and modern applications for Front-End Developing using popular Javascript frameworks such as VUE and React. For the Back-End Restful API's, MySql, php and Firestore.</p>
           </div>
         </div>
       </div>
@@ -111,6 +111,8 @@ export default {
 <style scoped>
 #edu{
   display: flex;
+  background: #b4b4b4;
+  padding: 40px 0 0 0;
   /* flex-direction: row; */
    /* flex-wrap: wrap; */
 }
@@ -124,6 +126,7 @@ export default {
   text-transform: uppercase;
   font-family:  arial, sans-serif;
   /* text-shadow: 3px 4px 2px #010203; */
+  color: #010203;
   font-size: 1.4em;
   letter-spacing: 0.1em;
   font-weight: 600;
@@ -191,7 +194,7 @@ export default {
 	margin: 1em 0;
 }
  .item .details h2 {
-   text-transform: uppercase;
+  text-transform: uppercase;
 	/* color: greenyellow; */
   /* color: white; */
   /* text-shadow: 2px 3px 2px #010203; */
@@ -205,12 +208,8 @@ export default {
 	margin: 0;
 	padding: 0;
   line-height: 150%;
+  font-weight: bold;
 }
-
- 
- 
-
-
 
 
 .skils{
@@ -246,9 +245,9 @@ font-size: 12px;
        font-weight: bold
     
      }
-     .univ h1{
+     /* .univ h1{
 color:white
-     }
+     } */
   .skils{
        margin-top: 3em;
        

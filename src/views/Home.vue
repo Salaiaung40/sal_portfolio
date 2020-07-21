@@ -1,5 +1,6 @@
 <template>
   <div id="home">
+    
     <img class="banner" src="@/assets/Imag/banner14.png" alt="banner" />
     <!-- <img class="banner" src="@/assets/banner2.jpg" alt="banner" /> -->
 
@@ -19,7 +20,7 @@
     <h1>create Nav bar</h1>
     <h1>links onepage highlight</h1>
      -->
-
+   
     <Aboutme />
     <Projects />
     <Experience />
@@ -37,6 +38,7 @@ import Education from "@/components/edu.vue";
 import Contact from "@/components/contact.vue";
 
 
+
 export default {
   name: "Home",
   components: {
@@ -45,6 +47,7 @@ export default {
     Experience,
     Education,
     Contact,
+  
 
   },
 };
@@ -58,6 +61,7 @@ export default {
   outline: 0;
   font-size: 100%;
   box-sizing: border-box;
+  background: #fff;
   /* background: blue; */
 }
 .banner {

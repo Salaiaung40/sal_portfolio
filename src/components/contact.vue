@@ -4,7 +4,8 @@
     <h2>Reference</h2>
     <div class="reference">
       <div class="pic">
-        <img src="@/assets/Imag/IMG_5068.png" alt="picture" /> <br />
+        <img src="@/assets/Imag/IMG_5068.png" alt="picture" />
+        <br />
 
         <a
           href="https://drive.google.com/file/d/10ST2XPIICPAOLX81JR1UgiySHBAptNu0/view?usp=sharing"
@@ -12,45 +13,61 @@
           download
         >
           <button>
-            Click here to Download <br />
-            Recomendation
+            Click here to Download
+            <br />Recommendation
           </button>
         </a>
       </div>
 
       <ul>
         <li>
-          <div class="icons"><i class="fa fa-map-marker"></i></div>
-          <div class="contact-name"><p>Name</p></div>
-          <div class="contact-info"><p>Benedikt Lantsoght</p></div>
+          <div class="icons">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <div class="contact-name">
+            <p>Name</p>
+          </div>
+          <div class="contact-info">
+            <p>Benedikt Lantsoght</p>
+          </div>
         </li>
 
         <li>
-          <div class="icons"><i class="fa fa-at"></i></div>
-          <div class="contact-name"><p>E-mail</p></div>
+          <div class="icons">
+            <i class="fa fa-at"></i>
+          </div>
+          <div class="contact-name">
+            <p>E-mail</p>
+          </div>
           <div class="contact-info">
             <p>
-              <a href="mailto:Benedikt.Lantsoght@intecbrussel.be">
-                Benedikt.Lantsoght@intecbrussel.be</a
-              >
+              <a href="mailto:Benedikt.Lantsoght@intecbrussel.be">Benedikt.Lantsoght@intecbrussel.be</a>
             </p>
           </div>
         </li>
 
         <li>
-          <div class="icons"><i class="fa fa-mobile-phone"></i></div>
-          <div class="contact-name"><p>GSM</p></div>
-          <div class="contact-info"><p>+32 499 388 227</p></div>
+          <div class="icons">
+            <i class="fa fa-mobile-phone"></i>
+          </div>
+          <div class="contact-name">
+            <p>GSM</p>
+          </div>
+          <div class="contact-info">
+            <p>+32 499 388 227</p>
+          </div>
         </li>
 
         <li>
-          <div class="icons"><i class="fa fa-globe"></i></div>
-          <div class="contact-name"><p>Website</p></div>
+          <div class="icons">
+            <i class="fa fa-globe"></i>
+          </div>
+          <div class="contact-name">
+            <p>Website</p>
+          </div>
           <div class="contact-info">
             <p>
-              <a href="http://letmesee.be" target="_" style="color:blue">
-                www.letmesee.be</a
-              >
+              <a href="http://letmesee.be" target="_" style="color:blue">www.letmesee.be</a>
             </p>
           </div>
         </li>
@@ -62,34 +79,17 @@
 
       <form id="form" class="contact-form" @submit.prevent="sendEmail">
         <div class="field name-box">
-          <input
-            type="text"
-            id="name"
-            name="user_name"
-            placeholder="Who Are You?"
-            required
-          />
+          <input type="text" id="name" name="user_name" placeholder="Who Are You?" required />
           <label for="name">Name</label>
         </div>
 
         <div class="field email-box">
-          <input
-            id="email"
-            type="email"
-            name="user_email"
-            placeholder="name@email.com"
-            required
-          />
+          <input id="email" type="email" name="user_email" placeholder="name@email.com" required />
           <label for="email">Email</label>
         </div>
 
         <div class="field company-box">
-          <input
-            id="company"
-            type="text"
-            name="user_company"
-            placeholder="Company"
-          />
+          <input id="company" type="text" name="user_company" placeholder="Company" />
           <label for="company">Company</label>
         </div>
 
@@ -113,16 +113,13 @@
           <i class="fa fa-github"></i>
         </a>
 
-        <a
-          href="https://linkedin.com/in/salai-tun-lin-aung-74a74910a"
-          target="_"
-        >
-          <i class="fa fa-linkedin-square"></i
-        ></a>
+        <a href="https://linkedin.com/in/salai-tun-lin-aung-74a74910a" target="_">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
 
         <a href="https://www.facebook.com/tun.linaung.566" target="_">
-          <i class="fa fa-facebook-square"></i
-        ></a>
+          <i class="fa fa-facebook-square"></i>
+        </a>
       </div>
     </section>
   </div>
@@ -136,7 +133,7 @@ export default {
   name: "Contact",
 
   methods: {
-    sendEmail: (e) => {
+    sendEmail: e => {
       var fieldName = document.forms["form"]["user_name"].value;
       var fieldMail = document.forms["form"]["user_email"].value;
       // var fieldCompany = document.forms["form"]["user_company"].value;
@@ -161,7 +158,7 @@ export default {
         user_email: "user_email_value",
         user_name: "user_name_value",
         user_company: "user_company_value",
-        message_html: "message_html_value",
+        message_html: "message_html_value"
       };
 
       var service_id = "gmail";
@@ -170,10 +167,10 @@ export default {
       emailjs
         .sendForm("gmail", "portfolio", e.target, "user_7iiFpEuMin1URLWCPTDEV")
         .then(
-          (result) => {
+          result => {
             console.log("SUCCESS!", result.status, result.text);
           },
-          (error) => {
+          error => {
             console.log("FAILED...", error);
           }
         );
@@ -182,8 +179,8 @@ export default {
       document.forms["form"]["user_email"].value = "";
       document.forms["form"]["user_company"].value = "";
       document.forms["form"]["user_message"].value = "";
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -191,7 +188,8 @@ export default {
 #contact {
   width: 100%;
   font-family: sans-serif;
-  /* background: blue; */
+  background:#909090;
+  padding-bottom: 30px;
   /* background: #efefef; */
   /* font-size: 62.5%; */
 }
@@ -274,10 +272,10 @@ button {
 
 body section {
   background: white;
-  margin: 60px auto 30px;
+  margin: 60px auto 0px;
   /* border-top: 15px solid #313a3d; */
   text-align: center;
-  padding: 50px 0 10px;
+  padding: 30px 0 0px;
   width: 80%;
   max-width: 1100px;
   border-radius: 1em;

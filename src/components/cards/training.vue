@@ -38,6 +38,7 @@ ul{
 }
 li{
   padding: 0.5em;
+  font-weight: bold;
 }
 @media screen and (max-width: 880px) {
 

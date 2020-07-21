@@ -67,19 +67,21 @@ import card from "@/components/cards/project-card.vue";
   font-size: 14px;
   font-weight: 500;
   font-family: arial, sans-serif;
+  background: #e4e4e4;
   /* background-color: green; */
  /* background-image: linear-gradient(to right, rgb(34, 31, 31), rgba(255,0,0,0)); */
   /* -webkit-font-smoothing: antialiased; */
 }
 
 .title {
-  padding-top: 1em;
+  padding-top: 0.4em;
   font-size: 4em;
   text-transform: uppercase;
   font-family:  sans-serif;
   /* text-shadow: 3px 4px 2px #010203; */
   font-weight: 100;
-  color: #fff;
+  color: #010203;
+  /* color: #fff; */
   text-align: center;
   /* background-color: hotpink; */
  }

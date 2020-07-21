@@ -8,7 +8,7 @@
         <div class="timeline-content">
           <h3>2020</h3>
           <span>Intec Brussels</span>
-          <p>Full-time intense course of HTML, CSS, Javascript and modern applications for Front-End Developing using also such popular Javascript frameworks as VUE and React.</p>
+          <p>Full-time intense training of HTML, CSS, Javascript and modern applications for Front-End Developing using popular Javascript frameworks such as VUE and React. For the Back-End Restful API's, MySql, php and Firestore.</p>
         </div>
       </div>
 
@@ -103,12 +103,14 @@ export default {};
   margin: 0;
   padding: 30px 0;
   font-family: arial, sans-serif;
+  background: #909090;
 }
 
 h1 {
   font-family: arial, sans-serif;
   /* text-shadow: 3px 4px 2px #010203; */
-  padding: 30px 0 0 0;
+  padding-top: 0.4em;
+  /* padding: 30px 0 0 0; */
   font-size: 4em;
   color: #fff;
   text-transform: uppercase;
@@ -128,7 +130,8 @@ span h6 {
   font-size: 16px;
 }
 span i {
-  color: blue;
+  color: yellow;
+  /* color: #464646; */
   font-size: 18px;
 }
 .container {
@@ -178,6 +181,7 @@ span i {
 .timeline-block-left {
   float: left;
   color: white;
+  font-weight: 600;
   direction: rtl;
 }
 

@@ -18,12 +18,10 @@
             <h3>"There is no success in life without challenges."</h3>
 
             <p>
-              I always passionate and wanted to work at IT sector. Thus, I did
-              self-taught some multimedia programs in the past. As a result, not
-              only improve my knowledge but also later I was able to teach to youth
-              from community. Now opportunity has given by INTEC to pursuit my
-              passionate career in front-end development sector. Ways to improvement
-              are continues learning and take new challenges constantly.
+              I always want to pursue my careers as a Web-Developer. I am active learner, determined, organized, openminded, flexible. I did self-taught some multimedia programs in the past. As a result, not only improve my knowledge but also later I was able to teach to youth from community. <br>
+              My previous experience generated me to strong in problem solving, critical thinking, good communication, team player with good collaboration and also able to work independently. Now opportunity has given by INTEC to pursuit my passionate career as a Web-Developer, I am eager to deliver my coding skills. <br>
+              Ways to improvement are continues learning and take new challenges constantly.
+
             </p>
           </div>
           <!--end of aboutme -->
@@ -102,14 +100,15 @@ export default {
 #about {
   font-family: Arial, sans-serif;
   width: 100%;
-  /* background: navy; */
+  background: #909090;
   /* background: rgba(170, 170, 170, 0.027); */
   
   
  
 }
 h1 {
-  padding: 30px 0 0 0;
+  padding-top: 0.4em;
+  /* padding: 30px 0 0 0; */
   font-size: 4em;
   color: #fff;
   text-transform: uppercase;
@@ -118,7 +117,8 @@ h1 {
   /* text-shadow: 3px 4px 2px #010203; */
 }
 h2  {
-  color: white;
+  /* color: white; */
+  color: #010203;
   text-align: left;
   padding-left: 1em;
 }
@@ -165,10 +165,11 @@ h3{
   width: 50%;
   margin: 1em;
   padding: 3em;
+  
 }
 
 .aboutme p {
-  color: white;
+  color: #010203;
   text-align: left;
   padding: 1em;
   line-height: 150%;
@@ -231,26 +232,31 @@ iframe {
   
 }
 @media screen and (max-width: 900px) {
+ 
   h1{
     font-size: 3em;
   }
   .container1 {
     display: block;
+    
   }
   .aboutme {
     width: 80%;
-    margin-left: 5em;
+    margin: 0 4em;
+    padding: 1em;
     /* background-color: blue;  */
   }
   .aboutme p,
   h2 {
     /* color: #010203; */
     font-weight: bold;
+    text-align: justify;
   }
   .contact {
     width: 80%;
     margin: 0 10%;
     /* background: yellow; */
+    padding-bottom: 1em;
   }
 }
 @media screen and (max-width: 500px) {

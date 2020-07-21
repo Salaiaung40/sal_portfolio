@@ -12,8 +12,9 @@ import VueSimpleAlert from "vue-simple-alert";
 Vue.use(VueSimpleAlert);
 
 // var $ = require('jquery')
-// var Scrollactive = require("vue-scrollactive");
-// Vue.use(Scrollactive);
+import VueScrollactive from 'vue-scrollactive';
+Vue.use(VueScrollactive);
+
 new Vue({
   router,
   render: (h) => h(App),

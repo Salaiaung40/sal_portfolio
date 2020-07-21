@@ -1,39 +1,55 @@
 <template>
   <div id="nav">
-    <label class="logo"
-      ><img src="@/assets/Imag/Salai-logo1.png" alt="logo"
-    /></label>
+    <label class="logo">
+      <img src="@/assets/Imag/Salai-logo1.png" alt="logo" />
+    </label>
 
     <input type="checkbox" id="check" />
     <label for="check" class="checkbtn">
       <i class="fa fa-bars"></i>
     </label>
 
-    <ul>
+    <ul class="menu">
       <!-- <router-link to="/">Home</router-link> | -->
-      <li><a href="#home" class="scrollactive-item">Home</a></li>
+      <scrollactive class="my-nav" :offset="200">
+        <li>
+          <a id="homed" href="#home" class="scrollactive-item">Home</a>
+        </li>
 
-      <li><a href="#about" class="scrollactive-item">About Me</a></li>
+        <li>
+          <a id="aboutd" href="#about" class="scrollactive-item">About Me</a>
+        </li>
 
-      <li><a href="#work" class="scrollactive-item">My Projects</a></li>
+        <li>
+          <a id="workd" href="#work" class="scrollactive-item">My Projects</a>
+        </li>
 
-      <li><a href="#experience" class="scrollactive-item">Experience</a></li>
+        <li>
+          <a id="expd" href="#experience" class="scrollactive-item"
+            >Experience</a
+          >
+        </li>
 
-      <li><a href="#edu" class="scrollactive-item">Education and Skills</a></li>
+        <li>
+          <a id="edud" href="#edu" class="scrollactive-item"
+            >Education and Skills</a
+          >
+        </li>
 
-      <li><a href="#contact" class="scrollactive-item">Contact Me</a></li>
+        <li>
+          <a id="contd" href="#contact" class="scrollactive-item">Contact Me</a>
+        </li>
+      </scrollactive>
 
       <!-- <router-link to="/about">About</router-link> -->
     </ul>
-
-    
-    
   </div>
 </template>
 
 <script>
+// import navjs from "@/assets/nav.js";
 export default {
-  components: {},
+  name: "Navbar",
 };
 </script>
 
@@ -69,6 +85,7 @@ label.logo img {
   float: right;
   cursor: pointer;
   background: white;
+  /* background: yellow; */
   display: none;
   border-radius: 0.2em;
 }
@@ -80,14 +97,7 @@ label.logo img {
   display: none;
 }
 
-
-
-
-
-
-
-
-#nav ul {
+#nav ul .my-nav {
   display: flex;
   list-style-type: none;
   transition: all 0.5s;
@@ -102,6 +112,7 @@ label.logo img {
   font-size: 1em;
   color: #d5dce4;
   text-decoration: none;
+  /* background: #141414; */
   background: #141414;
   border-radius: 1em;
   /* width: 1vw; */
@@ -111,7 +122,16 @@ label.logo img {
 
 #nav a:hover {
   background: #fff;
+  /* background: yellow; */
   color: #141414;
+}
+.scrollactive-item {
+  background-color: none;
+}
+
+.is-active {
+  background-color: #fff !important;
+  color: #141414 !important;
 }
 
 /* #nav a .router-link-exact-active {
@@ -139,6 +159,7 @@ label.logo img {
     width: 85%;
     height: 5vh;
     background: #829db885;
+
     top: 80px;
     left: -100%;
     text-align: center;
@@ -157,7 +178,8 @@ label.logo img {
 }
 
 @media screen and (max-width: 824px) {
-  #nav ul {
+  #nav ul,
+  .my-nav {
     padding: 0vw 1vw;
     display: flex;
     flex-direction: column;
@@ -168,15 +190,16 @@ label.logo img {
     transition: all 333ms ease-in-out;
     /* background: none; */
   }
-  #nav li {
+  li {
     width: 100%;
-    margin: 0.5vw 0vw;
+    margin: 0.5vw 0vw 0.5vw -3vw;
     background: #141414;
     border-radius: 0.5em;
   }
 }
 @media screen and (max-width: 400px) {
-  #nav ul {
+  #nav ul,
+  .my-nav {
     padding: 0vw 0vw;
     display: flex;
     flex-direction: column;
@@ -187,6 +210,7 @@ label.logo img {
     transition: all 333ms ease-in-out;
   }
   #nav li {
+    margin-left: -4vw;
     background: #141414;
   }
 }

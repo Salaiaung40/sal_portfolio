@@ -379,7 +379,7 @@ export default {
 @media screen and (max-width: 880px) {
 
 h1 {
-  color: white;
+  /* color: white; */
   /* text-shadow: none; */
   /* text-shadow: 3px 4px 2px #010203; */
 }
@@ -390,7 +390,7 @@ h1 {
   color: black;
 }
 .bar-title  {
-  color: white;
+  /* color: white; */
   text-transform: none;
 }
 
